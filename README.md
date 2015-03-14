@@ -2,9 +2,13 @@
 
 Have some fun with live data visualisation and mongoDB!
 
-In this demo we collect accelormeter data from smartphones and visualize them live in the browser.
-Also the data is saved in mongoDB and we have some short and long(er) term live aggregation examples prepared.
+In this demo we collect accelerometer data from smartphones and visualize them live in the browser.
+Also the data is saved to mongoDB and we have some short and long(er) term live aggregation examples prepared.
 This is meant to be an entertaining talk showing emphasizing on the easiness of making something out of live data.
+All you need is included, you can run this on a MacBook wired to a projector.
+
+Yes, the data we collect is useless (privacy)
+we just want to have something moving.
 
 You need:
 * mongoDB installed
@@ -38,8 +42,11 @@ config = {
 
 
 ## Collect accelerometer data ##
-* http://localhost:3000/ page -> send accelerometer data to node
-## visualization of collected data in browser ##
+make your users go to
+* http://<IP YOUR NODE SERVER IS RUNNING ON>:3000/ page -> send accelerometer data to node
+
+
+## visualization of collected data in your local browser ##
 * http://localhost:3000/cockpit -> show live stream data
 * http://localhost:3000/cockpit-aggregated -> show aggregated data
 
