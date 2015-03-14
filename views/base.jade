@@ -1,0 +1,40 @@
+html
+    head
+        link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+        style.
+            svg {
+                font: 10px sans-serif;
+            }
+
+            .line {
+                fill: none;
+                stroke: #000;
+                stroke-width: 1.5px;
+            }
+
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            .ml {
+                margin-left: 5px;
+            }
+
+            .tp {
+                margin-top: 5px;
+            }
+            .positive {
+                fill: #626dff
+            }
+            .negative {
+                fill: #f359ff
+            }
+
+body
+            block content
+            script(src='/jquery/dist/jquery.js')
+            script(src='/bootstrap/dist/js/bootstrap.js')
+            block customscripts

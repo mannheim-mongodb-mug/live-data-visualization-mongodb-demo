@@ -1,0 +1,57 @@
+html
+    head
+        link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+        style.
+            .x {
+                background-color: green;
+                margin-left:auto;
+                margin-right: auto;
+            }
+
+            .y {
+                background-color: red;
+                margin-left:auto;
+                margin-right: auto;
+            }
+
+            .z {
+                background-color: blue;
+                margin-left:auto;
+                margin-right: auto;
+            }
+
+            .indicator {
+                width: 30px;
+                height: 30px;
+                border-radius: 50px;
+            }
+    body
+        .container
+            div(id='content')
+                .row
+                    .jumbotron.text-center
+                        h1 Accelerometer Test
+                        h2 mongoDB Mannheim MUG
+                .row
+                    .col-xs-12.col-sm-4
+                        .jumbotron.text-center
+                            h2  x
+                                span(id='accelerationX')
+                            .x.indicator
+                    .col-xs-12.col-sm-4
+                        .jumbotron.text-center
+                            h2  y
+                                span(id='accelerationY')
+                            .y.indicator
+                    .col-xs-12.col-sm-4
+                        .jumbotron.text-center
+                            h2  z
+                                span(id='accelerationZ')
+                            .z.indicator
+                .row
+                button.btn.btn-lg.warning.col-xs-12.bg-success#stalling
+                    h2 emitting live
+
+
+        script(src='/socket.io/socket.io.js')
+        script(src='scripts/accelerometer.js')

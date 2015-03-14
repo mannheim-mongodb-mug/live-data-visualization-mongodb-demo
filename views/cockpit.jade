@@ -1,0 +1,18 @@
+extends base
+block content
+    include navigation
+    .container
+        div(id='content')
+            h2 Display any message as received.
+            h4 messages received:
+                span.ml#counted
+            div#data
+        .footer
+            h6 linecharts:  Mike Bostocks
+            a(href="http://bost.ocks.org/mike/path/") bost.ocks.org
+
+    script(src='/socket.io/socket.io.js')
+    script(src="/d3/d3.min.js" charset="utf-8")
+    script(src='scripts/lineCharts.js')
+    script(src='scripts/drawLiveChart.js')
+

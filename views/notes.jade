@@ -1,0 +1,16 @@
+extends base
+block content
+    include navigation
+    .container
+        h3 what we covered
+        ol
+            li a simple demo how to easily collect data from sensors with mongo db
+            li simple live dashboards for collected data
+
+        h3 not covered / what could be done better
+        ol
+            li schema optimization for time-series data
+            li pre-aggreate data / regular generation of reports
+            li replication: primary for writes, get aggregation via secondaries
+            li sharding
+            li handling if there is no data for some timeframes

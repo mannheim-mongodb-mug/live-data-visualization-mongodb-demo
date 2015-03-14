@@ -1,0 +1,24 @@
+{
+  "name": "meetup-IoT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.1",
+    "body-parser": "^1.10.2",
+    "bootstrap": "^3.3.2",
+    "d3": "^3.5.5",
+    "express": "^4.11.1",
+    "jade": "^1.9.1",
+    "jquery": "^2.1.3",
+    "mongoose": "^3.8.22",
+    "mqtt": "^1.0.5",
+    "socket.io": "^1.3.2"
+  },
+  "devDependencies": {}
+}

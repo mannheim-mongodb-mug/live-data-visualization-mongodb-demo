@@ -1,0 +1,37 @@
+extends base
+block content
+    include navigation
+    .container
+        div(id='content')
+            h2 Get daily report, aggregated live & un-optimized
+            h4 average per minute for x, y, z
+            row
+                form#aga.form-inline(action="/cockpit-on-demand" method="post")
+                    span date
+                    = ' '
+                    input(type="date" class="form-control" name="datum")
+                    = ' from '
+                    input(type="time" class="form-control" step="3600" name="startHour")
+                    = ' to '
+                    input(type="time" class="form-control" step="3600" name="endHour")
+                    input.btn.btn-primary(value="Go!" type="submit")
+            h4 records accounted for:
+                span.ml#counted
+            div#data
+
+block customscripts
+    script(src='/socket.io/socket.io.js')
+    script(src="/d3/d3.min.js" charset="utf-8")
+    script(src='scripts/onDemandCharts.js')
+    script(src='scripts/drawOnDemandChart.js')
+    script.
+        $(document).ready(function () {
+            var $form = $('#aga');
+            $form.submit(function () {
+                $.post($(this).attr('action'), $(this).serialize(), function (response) {
+                    console.log(response) // this is only a pseudo response
+                }, 'json');
+                return false;
+            });
+        });
+

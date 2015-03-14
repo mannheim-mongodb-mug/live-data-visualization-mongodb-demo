@@ -1,0 +1,23 @@
+<html><head><link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/><style>.x {
+    background-color: green;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.y {
+    background-color: red;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.z {
+    background-color: blue;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}</style></head><body><div class="container"><div id="content"><div class="row"><div class="jumbotron text-center"><h1>Accelerometer Test</h1><h2>mongoDB Mannheim MUG</h2></div></div><div class="row"><div class="col-xs-12 col-sm-4"><div class="jumbotron text-center"><h2> x<span id="accelerationX"></span></h2><div class="x indicator"></div></div></div><div class="col-xs-12 col-sm-4"><div class="jumbotron text-center"><h2> y<span id="accelerationY"></span></h2><div class="y indicator"></div></div></div><div class="col-xs-12 col-sm-4"><div class="jumbotron text-center"><h2> z<span id="accelerationZ"></span></h2><div class="z indicator"></div></div></div></div><div class="row"></div><button id="stalling" class="btn btn-lg warning col-xs-12 bg-success"><h2>emitting live</h2></button></div></div><script src="/socket.io/socket.io.js"></script><script src="scripts/accelerometer.js"></script></body></html>

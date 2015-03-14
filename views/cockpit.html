@@ -1,0 +1,31 @@
+<html><head><link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/><style>svg {
+    font: 10px sans-serif;
+}
+
+.line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.ml {
+    margin-left: 5px;
+}
+
+.tp {
+    margin-top: 5px;
+}
+.positive {
+    fill: #626dff
+}
+.negative {
+    fill: #f359ff
+}
+</style></head></html><body><div class="navbar navbar-default"><div class="container-fluid"><ul class="nav nav-pills tp"><li role="presentation"><a href="/cockpit">Live Messages</a></li><li role="presentation"><a href="/cockpit-aggregated">Live Aggregation</a></li><li role="presentation"><a href="/cockpit-on-demand">On Demand Aggregation</a></li><li role="presentation"><a href="/notes">Notes</a></li></ul></div></div><div class="container"><div id="content"><h2>Display any message as received.</h2><h4>messages received:<span id="counted" class="ml"></span></h4><div id="data"></div></div><div class="footer"><h6>linecharts:  Mike Bostocks</h6><a href="http://bost.ocks.org/mike/path/">bost.ocks.org</a></div></div><script src="/socket.io/socket.io.js"></script><script src="/d3/d3.min.js" charset="utf-8"></script><script src="scripts/lineCharts.js"></script><script src="scripts/drawLiveChart.js"></script><script src="/jquery/dist/jquery.js"></script><script src="/bootstrap/dist/js/bootstrap.js"></script></body>
