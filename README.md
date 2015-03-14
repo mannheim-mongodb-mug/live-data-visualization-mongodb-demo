@@ -61,6 +61,11 @@ http://localhost:3000/cockpit-aggregated -> show aggregated data
 originally created for our Mannheim mongoDB MUG
 http://www.meetup.com/Mannheim-MongoDB-User-Group/events/218857345/
 
+if you want to go even further and connect live sensors via MQTT check out rgreschner's:
+https://github.com/rgreschner/mongodb-iot-mqtt-example
+
+
+
 ## in your browser ##
 ![Alt text](README.png "Example")
 
