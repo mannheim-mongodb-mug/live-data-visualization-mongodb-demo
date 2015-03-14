@@ -58,4 +58,6 @@ make your users go to
 originally created for our Mannheim mongoDB MUG
 http://www.meetup.com/Mannheim-MongoDB-User-Group/events/218857345/
 
+![Alt text](README.png "Example")
+
 
