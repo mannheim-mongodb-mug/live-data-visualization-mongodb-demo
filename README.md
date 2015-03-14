@@ -61,8 +61,10 @@ http://localhost:3000/cockpit-aggregated -> show aggregated data
 originally created for our Mannheim mongoDB MUG
 http://www.meetup.com/Mannheim-MongoDB-User-Group/events/218857345/
 
+# in your browser #
 ![Alt text](README.png "Example")
 
+# on a smartphone #
 ![Alt text](USER.png "Smartphone exmaple")
 
 
