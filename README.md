@@ -40,6 +40,10 @@ config = {
 };
 ```
 
+run the webserver
+```
+node index.js
+```
 
 ## Collect accelerometer data ##
 make your users go to
