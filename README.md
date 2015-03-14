@@ -63,4 +63,7 @@ http://www.meetup.com/Mannheim-MongoDB-User-Group/events/218857345/
 
 ![Alt text](README.png "Example")
 
+![Alt text](USER.png "Smartphone exmaple")
+
+
 
