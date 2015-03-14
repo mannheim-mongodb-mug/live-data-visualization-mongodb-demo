@@ -47,12 +47,15 @@ node index.js
 
 ## Collect accelerometer data ##
 make your users go to
-* http://<IP YOUR NODE SERVER IS RUNNING ON>:3000/ page -> send accelerometer data to node
+
+http://<IP YOUR NODE SERVER IS RUNNING ON>:3000/ page -> send accelerometer data to node
 
 
 ## visualization of collected data in your local browser ##
-* http://localhost:3000/cockpit -> show live stream data
-* http://localhost:3000/cockpit-aggregated -> show aggregated data
+
+http://localhost:3000/cockpit -> show live stream data
+
+http://localhost:3000/cockpit-aggregated -> show aggregated data
 
 
 originally created for our Mannheim mongoDB MUG
